@@ -12,6 +12,7 @@ export default function Projects() {
       ],
       image: 'https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=800',
       tags: ['Python', 'Pandas', 'Scikit-learn', 'Matplotlib'],
+      repo: 'https://github.com/sanjay-krishnan005/customer_sales_analysis',
     },
     {
       title: 'Image Classification Using CNN',
@@ -23,6 +24,7 @@ export default function Projects() {
       ],
       image: 'https://images.pexels.com/photos/8438918/pexels-photo-8438918.jpeg?auto=compress&cs=tinysrgb&w=800',
       tags: ['CNN', 'TensorFlow/Keras', 'Computer Vision', 'PyTorch'],
+      repo: 'https://github.com/sanjay-krishnan005/image-classification-cifar10-datsets',
     },
   ];
 
@@ -80,6 +82,20 @@ export default function Projects() {
                         {tag}
                       </span>
                     ))}
+                  </div>
+                  <div className="mt-4 flex items-center gap-3">
+
+                    {project.repo && (
+                      <a
+                        href={project.repo}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 px-3 py-2 text-sm rounded-md bg-white/5 border border-white/10 hover:bg-white/10 transition"
+                      >
+                        <Github className="w-4 h-4 text-gray-300" />
+                        <span className="text-xs text-gray-300">Source</span>
+                      </a>
+                    )}
                   </div>
                 </div>
               </div>
