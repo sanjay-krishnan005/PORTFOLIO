@@ -1,6 +1,8 @@
+import React, { useState } from 'react';
 import { ChevronDown } from 'lucide-react';
 
 export default function Hero() {
+  const [showResume, setShowResume] = useState(false);
   return (
     <section className="relative min-h-screen flex items-center justify-center px-6 overflow-hidden">
       <div className="absolute inset-0 overflow-hidden">
@@ -38,8 +40,38 @@ export default function Hero() {
           >
             <span className="relative z-10 font-medium">Get in Touch</span>
           </a>
+          <button
+            onClick={() => setShowResume(true)}
+            className="group relative px-8 py-4 bg-cyan-500 text-white rounded-lg hover:bg-cyan-600 transition-all duration-300"
+          >
+            <span className="relative z-10 font-medium">View Resume</span>
+          </button>
+          <a
+            href="/Sanjay-Krishnan.pdf"
+            download
+            className="group relative px-8 py-4 bg-transparent border border-cyan-400/40 text-cyan-300 rounded-lg hover:bg-cyan-500/10 transition-all duration-300"
+          >
+            <span className="relative z-10 font-medium">Download Resume</span>
+          </a>
         </div>
 
+        {showResume && (
+          <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60">
+            <div className="relative w-[90%] h-[90%] bg-[#0b1220] rounded-lg shadow-lg">
+              <button
+                onClick={() => setShowResume(false)}
+                className="absolute top-3 right-3 z-50 px-3 py-1 bg-white/5 rounded-md text-white/90"
+              >
+                Close
+              </button>
+              <iframe
+                src="/Sanjay-Krishnan.pdf"
+                title="Resume"
+                className="w-full h-full rounded-lg"
+              />
+            </div>
+          </div>
+        )}
         <div className="absolute bottom-12 left-1/2 -translate-x-1/2 animate-bounce">
           <ChevronDown className="w-8 h-8 text-cyan-400/60" />
         </div>
