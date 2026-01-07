@@ -6,9 +6,9 @@ export default function About() {
     { icon: Code, label: 'Python, Java' },
     { icon: Brain, label: 'ML & Deep Learning' },
     { icon: Database, label: 'MySQL, Data Analysis' },
-    { icon: Zap, label: 'TensorFlow, PyTorch' },
+    { icon: Zap, label: 'FastAPI, PowerBI, Tableau, Flask, Git, Google Colab, Jupyter' },
     { icon: Network, label: 'NLP, Computer Vision' },
-    { icon: BookOpen, label: 'Pandas, Scikit-learn' },
+    { icon: BookOpen, label: 'Pandas, Numpy, Scikit-learn, Matplotlib, Seaborn, TensorFlow, PyTorch' },
   ];
 
   return (
