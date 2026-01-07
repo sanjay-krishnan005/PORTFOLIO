@@ -47,7 +47,7 @@ export default function Hero() {
             <span className="relative z-10 font-medium">View Resume</span>
           </button>
           <a
-            href="/Sanjay-Krishnan.pdf"
+            href="/Sanjay_Krishnan.pdf"
             download
             className="group relative px-8 py-4 bg-transparent border border-cyan-400/40 text-cyan-300 rounded-lg hover:bg-cyan-500/10 transition-all duration-300"
           >
@@ -65,7 +65,7 @@ export default function Hero() {
                 Close
               </button>
               <iframe
-                src="/Sanjay-Krishnan.pdf"
+                src="/Sanjay_Krishnan.pdf"
                 title="Resume"
                 className="w-full h-full rounded-lg"
               />

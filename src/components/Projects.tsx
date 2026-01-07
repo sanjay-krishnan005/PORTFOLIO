@@ -26,6 +26,18 @@ export default function Projects() {
       tags: ['CNN', 'TensorFlow/Keras', 'Computer Vision', 'PyTorch'],
       repo: 'https://github.com/sanjay-krishnan005/image-classification-cifar10-datsets',
     },
+    {
+      title: 'FastAPI Payslip Generator & Automated Email System',
+      description: 'Built a FastAPI backend to generate A4 PDF payslips (ReportLab) and email them automatically using SMTP. Processes Excel/CSV payroll data and handles bulk employee processing with async workers and robust error logging.',
+      details: [
+        'Processed Excel/CSV payroll data and generated A4 PDF payslips using ReportLab',
+        'Implemented async processing and background tasks for bulk handling',
+        'Automated emailing via SMTP with batching and retry logic',
+      ],
+      image: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800',
+      tags: ['FastAPI', 'ReportLab', 'Python', 'Async', 'SMTP'],
+      repo: 'https://github.com/sanjay-krishnan005/FASTAPI_PAYROLE_GENERATOR',
+    },
   ];
 
   return (
